@@ -140,12 +140,12 @@ cursor {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .button-close{
-  width: 24px;
-  height: 24px;
-  left: 876px;
-  top: 112px;
+  position: absolute;
+  left: 360px;
+  right: 24px;
+  top: 24px;
+  bottom: 528px;
 }
-
 .address {
   margin-left: auto;
 }
