@@ -151,7 +151,7 @@ cursor {
   cursor: pointer;
   background: #E7E9FC;
   color: #000;
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-img{
   fill: currentColor;
@@ -191,12 +191,11 @@ cursor {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   fill: currentColor;
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link {
   color: #8e8f99;
-  /* transition: property 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  transform: translate 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers {
   font-family: "Roboto";
@@ -209,6 +208,7 @@ cursor {
   text-transform: capitalize;
   margin-bottom: 72px;
   color: #2e2f42;
+  
 }
 .professions-social-list {
   display: flex;
@@ -218,6 +218,7 @@ cursor {
   padding-top: 8px;
   padding-bottom: 32px;
   background-color: var(--white);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .professional-social-link {
   display: flex;
@@ -227,7 +228,7 @@ cursor {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .rectangle-one {
   display: flex;
@@ -276,6 +277,7 @@ cursor {
   background: var(--navyblue);
   padding-top: 100px;
   padding-bottom: 100px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-primary-link {
   color: var(--cloud);
@@ -363,7 +365,7 @@ header .conteanir {
   letter-spacing: 0.02em;
   color: var(--slate);
   text-decoration: none;
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-title-one {
   font-weight: 700;
@@ -409,6 +411,7 @@ header .conteanir {
   color: var(--navyblue);
   background: var(--white);
   padding-top: 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-text-our-team {
   font-weight: 400;
@@ -419,6 +422,7 @@ header .conteanir {
   justify-content: center;
   background: var(--white);
   padding: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-filter {
   align-items: flex-start;
@@ -450,7 +454,7 @@ header .conteanir {
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-one {
   font-family: "Roboto";
@@ -464,7 +468,7 @@ header .conteanir {
   display: block;
   border-radius: 4px;
   border: none;
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .visually-hidden {
@@ -516,7 +520,7 @@ header .conteanir {
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-text-portfolio{
   position: relative;
@@ -557,6 +561,7 @@ transform: translateY(100%);
 transition: transform 0.35s linear;
 overflow: scroll;
 padding: 40px 32px 164px 32px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-wrap{
   position: relative;
@@ -565,6 +570,7 @@ padding: 40px 32px 164px 32px;
 .card-link:hover .card-overlay{
 transform: translateY(0);
 background: #4D5AE5;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .text-footer {
   line-height: 1.33;
@@ -593,6 +599,7 @@ background: #4D5AE5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-conteanir {
   display: flex;
@@ -618,7 +625,7 @@ background: #4D5AE5;
   height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-box-footer {
   display: flex;
