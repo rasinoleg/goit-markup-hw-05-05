@@ -73,7 +73,8 @@ cursor {
 }
 .button-close:hover,
 .button-close:focus{
-  background-color: var(--iris);
+  background: var(--iris);
+  color: var(--white);
 }
 .professional-social-link:hover {
   background-color: var(--ocean);
@@ -89,6 +90,7 @@ cursor {
   left: 0;
   bottom: 0;
   color: #404bbf;
+  margin-bottom: -1px;
 }
 .section-one {
   background: var(--navyblue);
@@ -148,7 +150,11 @@ cursor {
   border: 1px solid rgba(231, 233, 252, 1);
   cursor: pointer;
   background: #E7E9FC;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #000;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-img{
+  fill: currentColor;
 }
 .address {
   margin-left: auto;
@@ -185,11 +191,11 @@ cursor {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   fill: currentColor;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link {
   color: #8e8f99;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers {
   font-family: "Roboto";
@@ -220,7 +226,7 @@ cursor {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .rectangle-one {
   display: flex;
@@ -357,7 +363,7 @@ header .conteanir {
   letter-spacing: 0.02em;
   color: var(--slate);
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-title-one {
   font-weight: 700;
@@ -444,7 +450,7 @@ header .conteanir {
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-one {
   font-family: "Roboto";
@@ -458,7 +464,8 @@ header .conteanir {
   display: block;
   border-radius: 4px;
   border: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .visually-hidden {
   position: absolute;
@@ -496,7 +503,7 @@ header .conteanir {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 .list-text {
   position: relative;
@@ -504,13 +511,26 @@ header .conteanir {
   display: inline-block;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-text-portfolio{
+  position: relative;
+  padding: 24px 0;
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
 }
 .card-link {
   text-decoration: none;
@@ -518,7 +538,7 @@ header .conteanir {
   width: 360px;
 height: 420px;
 }
-.card-two-overlay{
+.card-overlay{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -526,7 +546,7 @@ font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: #F4F4FD;
-background: rgba(46, 47, 66, 0.4);
+background: #4D5AE5;
 mix-blend-mode: normal;
 padding: 20px;
 position: absolute;
@@ -542,9 +562,8 @@ padding: 40px 32px 164px 32px;
 .text-wrap{
   position: relative;
   overflow: hidden;
-  
 }
-.card-link:hover .card-two-overlay{
+.card-link:hover .card-overlay{
 transform: translateY(0);
 background: #4D5AE5;
 } 
@@ -600,7 +619,7 @@ background: #4D5AE5;
   height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-box-footer {
   display: flex;
