@@ -75,16 +75,60 @@
                 </svg>
               </button>
               <form class="js-speaker-form">
-                  <label class="modal-text" for="name">Name</label>
+                <p class="text-modal">
+                  Leave your contacts and we will call you back
+                </p>
+                <div>
+                <label class="modal-text" for="name"
+                  >Name
                   <input class="name" type="text" name="name" id="name" />
-                <label class="modal-text" for="tel">Phone</label>
-                <input class="tel" type="tel" name="tel" id="tel" />
-                <label class="modal-text" for="mail">Email</label>
-                <input class="email" type="email" name="mail" id="mail" />
-                <label class="modal-text" for="comment">Comment</label>
-                <input class="comment" type="comment" name="comment" id="comment" />
-
-                <button class="button-send send-text" type="submit">Send</button>
+                  <svg class="modal-img-icon" width="12" height="12">
+                    <use
+                      href="./css/icons.svg/symbol-defs-5.svg#icon-Vector-1"
+                    ></use>
+                  </svg>
+                </label>
+              </div>
+                <div>
+                  <label class="modal-text" for="tel"
+                    >Phone
+                    <input class="tel" type="tel" name="tel" id="tel" />
+                    <svg class="modal-img-icon" width="13" height="13">
+                      <use
+                        href="./css/icons.svg/symbol-defs-5.svg#icon-Vector-2"
+                      ></use>
+                    </svg>
+                  </label>
+                </div>
+                <div>
+                  <label class="modal-text" for="mail"
+                    >Email
+                    <input class="email" type="email" name="mail" id="mail" />
+                    <svg class="modal-img-icon" width="15" height="12">
+                      <use
+                        href="./css/icons.svg/symbol-defs-5.svg#icon-Vector-3"
+                      ></use>
+                    </svg>
+                  </label>
+                </div>
+                <div>
+                  <label class="modal-text" for="comment"
+                    >Comment
+                    <textarea class="form-comment"
+                  name="comment" id="comment" cols="" rows="10" placeholder="Text-input"
+                ></textarea>
+                  </label>
+                </div>
+                <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+                <label class="text-checkbox" for="checkbox"
+                  >I accept the terms and conditions of the <a class="form-polisy-link" href="">Privacy
+                    Policy</a> 
+                  
+                  </label
+                >
+                <button class="button-send send-text" type="submit">
+                  Send
+                </button>
               </form>
             </div>
           </div>

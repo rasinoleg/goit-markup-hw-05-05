@@ -130,6 +130,8 @@ cursor {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  padding-right: 24px;
+  padding-left: 24px;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -161,33 +163,28 @@ cursor {
   background: #fcfcfc;
   border-radius: 4px;
   margin-top: 4px;
-  border: 1px solid #4D5AE5;
-border-radius: 4px;
+  border: 1px solid #4d5ae5;
 }
 .tel {
   width: 360px;
   height: 40px;
   left: 0px;
-top: 84px;
+  top: 84px;
   background: #fcfcfc;
   border-radius: 4px;
-  margin-top: 4px;
-  padding-top: 8px;
   opacity: 0.2;
-border: 1px solid #2E2F42;
-border-radius: 4px;
+  border: 1px solid #2e2f42;
 }
 .email {
   width: 360px;
   height: 40px;
   left: 0px;
-top: 84px;
+  top: 84px;
   background: #fcfcfc;
   border-radius: 4px;
   margin-top: 4px;
   opacity: 0.2;
-border: 1px solid #2E2F42;
-border-radius: 4px;
+  border: 1px solid #2e2f42;
 }
 .comment {
   width: 360px;
@@ -195,8 +192,9 @@ border-radius: 4px;
   left: 0px;
   top: 216px;
   opacity: 0.2;
-  border: 1px solid #2E2F42;
+  border: 1px solid #2e2f42;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 .modal-text {
   font-family: "Roboto";
@@ -206,9 +204,52 @@ border-radius: 4px;
   line-height: 14px;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  position: relative;
 }
-.button-send{
+.text-modal {
+  width: 360px;
+  height: 24px;
+  left: 540px;
+  top: 152px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 34px;
+}
+.text-checkbox {
+  width: 338px;
+  height: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.checkbox {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 16px;
+}
+.button-send {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -217,27 +258,58 @@ border-radius: 4px;
   gap: 10px;
   width: 169px;
   height: 56px;
-  left: 635px;
-  top: 584px;
-  background: #4D5AE5;
+  background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  /* transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.send-text{
+.send-text {
   width: 105px;
-height: 24px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-
+  height: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
+  margin-top: 24px;
+}
+.modal-img-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45px;
+  left: 19px;
+  transform: translateY(-50%);
+}
+.form-comment {
+  display: flex;
+  justify-content: center;
+  width: 360px;
+  height: 120px;
+  left: 0px;
+  top: 216px;
+  opacity: 0.2;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+.form-comment::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  
 }
 .address {
   margin-left: auto;
